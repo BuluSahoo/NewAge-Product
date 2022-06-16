@@ -1,0 +1,132 @@
+.form_section{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    margin: 5rem 8rem;
+    
+}
+.form_container{
+    display: grid;
+    grid-template-columns: 3fr 3fr 1fr;
+    gap: 0.7rem;
+}
+.form_container #task{
+    padding: 5px;
+}
+.form_container #jira{
+    padding: 5px;
+
+}
+.form_container2{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.7rem;
+    height: 2rem;
+}
+
+.mock_up{
+    padding: 5px;
+}
+textarea{
+    padding: 5px;
+}
+#submit{
+    background-color: red;
+    color: white;
+    border: none;
+    height: 2rem;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+#submit:hover{
+    font-weight: bolder;
+    background-color: brown;
+    
+}
+
+.hr1{
+    margin-top: -3rem;
+}
+
+/* ================ table =============== */
+
+#progress{
+    margin-top: 3.5rem;
+    margin-left: 2rem ;
+}
+.content_table{
+    text-align: center;
+    margin: 25px 2rem;
+    font-size: 0.9rem;
+    width: 95%;
+    border-collapse: collapse;
+}
+table,th,td {
+    border: 2px solid black;
+    padding: 8px 0;
+}
+thead{
+    background-color: #6f64647c;
+}
+.action{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+.edit{
+    background-color: red;
+    color: white;
+    padding: 6px;
+}
+
+.done{
+    background-color: red;
+    color: white;
+    padding: 6px;
+}
+
+/* ============== MEDIA QUERIES (MEDIUM DEVICES)=============== */
+
+@media  screen and (max-width: 1024px){
+    .form_section{
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+        margin: 5rem 3rem;
+        
+    }
+
+    #progress{
+        margin-top: 1rem;
+        margin-left: 1rem ;
+        font-size: large;
+    }
+    .content_table{
+        text-align: center;
+        margin: 15px 1rem;
+        font-size: 0.6rem;
+        width: 95vw;
+        border-collapse: collapse;
+    }
+    table,th,td {
+        border: 2px solid black;
+        padding: 4px 0;
+    }
+    .action{
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        justify-content: center;
+    }
+    .edit{
+        background-color: red;
+        color: white;
+        padding: 3px;
+    }
+    .done{
+        background-color: red;
+        color: white;
+        padding: 3px;
+    }
+}
